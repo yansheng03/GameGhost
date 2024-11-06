@@ -1,0 +1,90 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, #9400ff, #ff00f2, #9400ff);
+    opacity: 0.8;
+    mix-blend-mode: overlay;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section {
+    margin: 2em;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: #4CAF50;
+}

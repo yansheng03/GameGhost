@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" type="text/css" href="CSS/styleGameGhost.css" />
+    <title>Game Ghost - Your Gaming E-Commerce Destination</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Image/Game Ghost Banner.png" height="600px" width="1400px" alt="Game Ghost Logo">
+        </div>
+    </header>
+    <nav>
+        <a href="LoggedInGameGhost.html">Home</a>
+        <a href="LoggedInAboutGameGhost.html">About</a>
+        <a href="LoggedInContactGameGhost.html">Contact Us</a>
+        <a href="LogInGameGhost.html">Logout</a>
+        <a href="SignUpGameGhost.html">Sign Up</a>
+    </nav>
+    </nav>
+
+    <header>
+        <input type="text" id="searchBar" placeholder="Search For Games">
+    </header>
+    <section>
+        <h2>Top Sellers</h2>
+        <div class="image-slider">
+            <div class="slider-content">
+                <div class="slide"><img src="Image/Resident Evil 4 Remake.jpg" alt="Horror Game 1"></div>
+                <div class="slide"><img src="Image/Lethal Company.jpg" alt="Horror Game 2"></div>
+                <div class="slide"><img src="Image/Sons Of The Forest.jpg" alt="Horror Game 3"></div>
+                <div class="slide"><img src="Image/Remnant 2.jpg" alt="Horror Game 4"></div>
+                <div class="slide"><img src="Image/The Outlast Trials.jpg" alt="Horror Game 5"></div>
+                <div class="slide"><img src="Image/The Texas Chain Saw Massacre.jpg" alt="Horror Game 6"></div>
+                <div class="slide"><img src="Image/Dead By Daylight.jpg" alt="Horror Game 7"></div>
+                <div class="slide"><img src="Image/Phasmophobia.jpg" alt="Horror Game 8"></div>
+                <div class="slide"><img src="Image/Alan Wake 2.jpeg" alt="Horror Game 9"></div>
+                <div class="slide"><img src="Image/Grounded.jpg" alt="Horror Game 10"></div>
+            </div>
+            <button class="slider-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="slider-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Products</h2>
+        <div class="product page1">
+            <img src="Image/Resident Evil 4 Remake.jpg" alt="Product 1"><img src="Image/Resident Evil 4 Remake Gameplay.jpg" alt="Product 1 gameplay">
+            <h3>Resident Evil 4 Remake</h3>
+            <p>Survival is just the beginning.<br>
+                Six years have passed since the biological disaster in Raccoon City.
+                Agent Leon S. Kennedy, one of the survivors of the incident, has been sent to rescue the president's
+                kidnapped daughter.
+                He tracks her to a secluded European village, where there is something terribly wrong with the locals.
+                And the curtain rises on this story of daring rescue and grueling horror where life and death, terror
+                and catharsis intersect.
+
+                Featuring modernized gameplay, a reimagined storyline, and vividly detailed graphics,
+                Resident Evil 4 marks the rebirth of an industry juggernaut.
+
+                Relive the nightmare that revolutionized survival horror.</p>
+            <p>Price: $60</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_ResidentEvil4Remake" min="1" value="1">
+            <button
+                onclick="addToCart('Resident Evil 4 Remake', 60, getProductQuantity('quantity_ResidentEvil4Remake'))">Add
+                to Cart</button>
+        </div>
+        <div class="product page1">
+            <img src="Image/Lethal Company.jpg" alt="Product 2"><img src="Image/Lethal Company Gameplay.webp" alt="Product 2 gameplay">
+            <h3>Lethal Company</h3>
+            <p>You are a contracted worker for the Company. Your job is to collect scrap from abandoned, industrialized
+                moons
+                to meet the Company's profit quota. You can use the cash you earn to travel to new moons with higher
+                risks and rewards
+                or you can buy fancy suits and decorations for your ship. Experience nature, scanning any creature you
+                find to add them to
+                your bestiary. Explore the wondrous outdoors and rummage through their derelict, steel and concrete
+                underbellies.<br>
+                Just never miss the quota.
+            </p>
+            <p>Price: $15</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_LethalCompany" min="1" value="1">
+            <button onclick="addToCart('Lethal Company', 15, getProductQuantity('quantity_LethalCompany'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page1">
+            <img src="Image/Sons Of The Forest.jpg" alt="Product 3"><img src="Image/Sons Of The Forest Gameplay.jpg" alt="Product 3 gameplay">
+            <h3>Sons Of The Forest</h3>
+            <p>An entirely new experience from the makers of the ‘The Forest’<br>
+                Sent to find a missing billionaire on a remote island, you find yourself in a cannibal-infested
+                hellscape. Craft, build, and struggle to survive, alone or with friends, in this terrifying new
+                open-world survival
+                horror simulator.</p>
+            <p>Price: $25</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_SonsOfTheForest" min="1" value="1">
+            <button onclick="addToCart('Sons Of The Forest', 25, getProductQuantity('quantity_SonsOfTheForest'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page1">
+            <img src="Image/Remnant 2.jpg" alt="Product 4"><img src="Image/Remnant 2 Gameplay.jpg" alt="Product 4 gameplay">
+            <h3>Remnant 2</h3>
+            <p>Remnant II is the sequel to the best-selling game Remnant: From the Ashes that pits survivors of humanity
+                against new deadly creatures and god-like bosses across terrifying worlds. Play solo or co-op with two
+                other friends to
+                explore the depths of the unknown to stop an evil from destroying reality itself. <br>
+                To succeed, players will need to rely on their own skills and those of their team to overcome the
+                toughest challenges and to stave off humanity’s extinction.</p>
+            <p>Price: $35</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_Remnant2" min="1" value="1">
+            <button onclick="addToCart('Remnant 2', 35, getProductQuantity('quantity_Remnant2'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page1">
+            <img src="Image/The Outlast Trials.jpg" alt="Product 5"><img src="Image/The Outlast Trials Gameplay.jpg" alt="Product 5 gameplay">
+            <h3>The Outlast Trials</h3>
+            <p>Experience mind-numbing terror, this time with friends. Whether you go through
+                the trials alone or in teams, if you survive long enough and complete the therapy, Murkoff will happily
+                let you leave… but will you be the same?<br>
+                Set in the era of the Cold War, human guinea pigs are involuntarily recruited by the good folks at the
+                Murkoff Corporation to test advanced methods of brainwashing and mind control. In a world of distrust,
+                fear, and violence, your morals will be challenged, your endurance tested, and your sanity crushed. All
+                in the name of progress, science, and profit.</p>
+            <p>Price: $15</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_TheOutlastTrials" min="1" value="1">
+            <button onclick="addToCart('The OutLast Trials', 15, getProductQuantity('quantity_TheOutlastTrials'))">Add
+                to
+                Cart</button>
+        </div>
+
+        <div class="product page2">
+            <img src="Image/The Texas Chain Saw Massacre.jpg" alt="Product 6"><img src="Image/The Texas Chain Saw Massacre Gameplay.jpg" alt="Product 6 gameplay">
+            <h3>The Texas Chain Saw Massacre</h3>
+            <p>Take on the role of one of the notorious Slaughter family, or their victims, in The Texas Chain Saw
+                Massacre, a third-person asymmetrical horror experience based on the groundbreaking and iconic 1974
+                horror film.
+                As a victim you must use your wits and stealth to stay out of the Family's reach and find the tools you
+                need to lead to your eventual freedom. Slaughter Family players must seek out, track down, and stop
+                their guests from escaping. Players of The Texas Chain Saw Massacre can finally find out if they have
+                what it takes to survive.<br>
+                Experience the mad and macabre for yourself in The Texas Chain Saw Massacre.</p>
+            <p>Price: $23</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_TheTexasChainSawMassacre" min="1" value="1">
+            <button
+                onclick="addToCart('The Texas Chain Saw Massacre', 23, getProductQuantity('quantity_TheTexasChainSawMassacre'))">Add
+                to
+                Cart</button>
+        </div>
+        <div class="product page2">
+            <img src="Image/Dead By Daylight.jpg" alt="Product 7"><img src="Image/Dead By Daylight Gameplay.jpg" alt="Product 7 gameplay">
+            <h3>Dead By Daylight</h3>
+            <p>Dead by Daylight is a multiplayer (4vs1) horror game where one player takes on the role of the savage
+                Killer, and the other four players play as Survivors, trying to escape the Killer and avoid being
+                caught, tortured and killed.<br>
+                Survivors play in third-person and have the advantage of better situational awareness. The Killer plays
+                in first-person and is more focused on their prey.
+                The Survivors' goal in each encounter is to escape the Killing Ground without getting caught by the
+                Killer - something that sounds easier than it is, especially when the environment changes every time you
+                play.</p>
+            <p>Price: $10</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_DeadByDaylight" min="1" value="1">
+            <button onclick="addToCart('Dead By Daylight', 10, getProductQuantity('quantity_DeadByDaylight'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page2">
+            <img src="Image/Phasmophobia.jpg" alt="Product 8"><img src="Image/Phasmophobia Gameplay.jpg" alt="Product 8 gameplay">
+            <h3>Phasmophobia</h3>
+            <p>Phasmophobia is a 4-player, online co-op, psychological horror game. You and your team of paranormal
+                investigators will enter haunted locations filled with paranormal activity and try to gather as much
+                evidence as you can. <br>
+                Use your ghost-hunting equipment to find and record evidence to sell on to a ghost removal team.</p>
+            <p>Price: $15</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_Phasmophobia" min="1" value="1">
+            <button onclick="addToCart('Phasmophobia', 15, getProductQuantity('quantity_Phasmophobia'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page2">
+            <img src="Image/Alan Wake 2.jpeg" alt="Product 9"><img src="Image/Alan Wake 2 Gameplay.jpg" alt="Product 9 gameplay">
+            <h3>Alan Wake 2</h3>
+            <p>A sequel to Alan Wake, the story follows best-selling horror novelist Alan Wake, who has been trapped in
+                an alternate dimension for 13 years, as he attempts to escape by writing a horror story involving an FBI
+                special agent named Saga Anderson</p>
+            <p>Price: $65</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_AlanWake2" min="1" value="1">
+            <button onclick="addToCart('Alan Wake 2', 65, getProductQuantity('quantity_AlanWake2'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page2">
+            <img src="Image/Grounded.jpg" alt="Product 10"><img src="Image/Grounded Gameplay.jpg" alt="Product 10 gameplay">
+            <h3>Grounded</h3>
+            <p>The world is a vast, beautiful, and dangerous place – especially when you have been shrunk to the size of
+                an ant. Explore, build and survive together in this first-person, multiplayer, survival adventure. <br>
+                Can you thrive alongside the hordes of giant insects, fighting to survive the perils of the backyard?
+            </p>
+            <p>Price: $30</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_Grounded" min="1" value="1">
+            <button onclick="addToCart('Grounded', 30, getProductQuantity('quantity_Grounded'))">Add to
+                Cart</button>
+        </div>
+
+        <div class="product page3">
+            <img src="Image/Dead Space.jpg" alt="Product 11"><img src="Image/Dead Space Gameplay.jpg" alt="Product 11 gameplay">
+            <h3>Dead Space</h3>
+            <p>Isaac Clarke is an everyman engineer on a mission to repair a vast mining ship, the USG Ishimura, only to
+                discover something has gone horribly wrong. The ship's crew has been slaughtered and Isaac’s beloved
+                partner, Nicole, is lost somewhere on board.<br>
+                Now alone and armed with only his engineering tools and skills, Isaac races to find Nicole as the
+                nightmarish mystery of what happened aboard the Ishimura unravels around him. Trapped with hostile
+                creatures called Necromorphs, Isaac faces a battle for survival, not only against the escalating terrors
+                of the ship but against his own crumbling sanity</p>
+            <p>Price: $45</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_DeadSpace" min="1" value="1">
+            <button onclick="addToCart('Dead Space', 45, getProductQuantity('quantity_DeadSpace'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page3">
+            <img src="Image/Stray.jpg" alt="Product 12"><img src="Image/Stray Gameplay.jpg" alt="Product 12 gameplay">
+            <h3>Stray</h3>
+            <p>Lost, alone and separated from family, a stray cat must untangle an ancient mystery to escape a
+                long-forgotten city.<br>
+                Stray is a third-person cat adventure game set amidst the detailed, neon-lit alleys of a decaying
+                cybercity and the murky environments of its seedy underbelly. Roam surroundings high and low, defend
+                against unforeseen threats and solve the mysteries of this unwelcoming place inhabited by curious droids
+                and dangerous creatures. See the world through the eyes of a cat and interact with the environment in
+                playful ways. Be stealthy,
+                nimble, silly, and sometimes as annoying as possible with the strange inhabitants of this mysterious
+                world. Along the way, the cat befriends a small flying drone, known only as B-12. With the help of this
+                newfound companion, the duo must find a way out.
+            </p>
+            <p>Price: $20</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_Stray" min="1" value="1">
+            <button onclick="addToCart('Stray', 20, getProductQuantity('quantity_Stray'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page3">
+            <img src="Image/Hunt Showdown.jpg" alt="Product 13"><img src="Image/Hunt Showdown Gameplay.jpg" alt="Product 13 gameplay">
+            <h3>Hunt Showdown</h3>
+            <p>HUNT TOGETHER. DIE ALONE.<br>
+                The year is 1895, and you are a Hunter tasked with eliminating the savage, nightmarish monsters that
+                have infested the Louisiana Bayou. Play alone or in teams of two or three, as you search for clues to
+                help you track
+                your target and compete against other Hunters who are after the same reward. Kill and banish your
+                target, collect
+                the bounty, and then get ready for the showdown; once the bounty is in your hands every other Hunter on
+                the map will be
+                after your prize. Show no mercy as you fight through a dark, ruthless world with brutal, period-inspired
+                weapons, as you
+                level up, unlock gear, and collect experience and gold for your Bloodline.</p>
+            <p>Price: $38</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_HuntShowdown" min="1" value="1">
+            <button onclick="addToCart('Hunt Showdown', 38, getProductQuantity('quantity_HuntShowdown'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page3">
+            <img src="Image/Dark Souls 3.jpg" alt="Product 14"><img src="Image/Dark Souls 3 Gameplay.jpg" alt="Product 14 gameplay">
+            <h3>Dark Souls 3</h3>
+            <p>DARK SOULS™ III continues to push the boundaries with the latest, ambitious chapter in the
+                critically-acclaimed and genre-defining series.<br>
+                As fires fade and the world falls into ruin, journey into a universe filled with more colossal enemies
+                and environments. Players will be immersed into a world of epic atmosphere and darkness through faster
+                gameplay and amplified combat intensity. Fans and newcomers alike will get lost in the game hallmark
+                rewarding gameplay and immersive graphics.<br>
+                Now only embers remain… Prepare yourself once more and Embrace The Darkness!</p>
+            <p>Price: $40</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_DarkSouls3" min="1" value="1">
+            <button onclick="addToCart('DarkSouls3', 40, getProductQuantity('quantity_DarkSouls3'))">Add to
+                Cart</button>
+        </div>
+        <div class="product page3">
+            <img src="Image/Doom Eternal.jpg" alt="Product 15"><img src="Image/Doom Eternal Gameplay.jpg" alt="Product 15 gameplay">
+            <h3>Doom Eternal</h3>
+            <p>Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons
+                across dimensions and stop the final destruction of humanity
+                Experience the ultimate combination of speed and power in DOOM Eternal - the next leap in push-forward,
+                first-person combat.<br>
+                The Only Thing they Fear... Is You.</p>
+            <p>Price: $52</p>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity_DoomEternal" min="1" value="1">
+            <button onclick="addToCart('Doom Eternal', 52, getProductQuantity('quantity_DoomEternal'))">Add to
+                Cart</button>
+        </div>
+    </section>
+
+    <section id="dates">
+        <h2>Dates</h2>
+        <p>Date of Creation: 29/11/2023</p>
+        <p>Date of Data Collection: 29/11/2023</p>
+        <p>Date of Latest Modification: 11/12/2023</p>
+    </section>
+
+    <div id="pageButtons">
+        <button onclick="changePage(1)">Page 1</button>
+        <button onclick="changePage(2)">Page 2</button>
+        <button onclick="changePage(3)">Page 3</button>
+    </div>
+
+    <section id="stickyCart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartList">
+        </ul>
+        <p>Total Price: $<span id="totalPrice">0</span></p>
+        <button onclick="checkout()">Proceed to Checkout</button>
+    </section>
+
+    <section class="checkout-form fixed" id="checkoutForm" style="display: none;">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label for="cardNumber">Credit Card Number:</label>
+            <input type="text" id="cardNumber" required>
+
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="text" id="expirationDate" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required>
+
+            <input type="submit" value="Place Order">
+        </form>
+    </section>
+
+    <section class="order-confirmation fixed" id="orderConfirmation" style="display: none;">
+        <h2>Order Confirmation</h2>
+        <p>Thank you for your purchase! Your order has been confirmed.</p>
+        <button onclick="goBack()">Back to Shopping</button>
+    </section>
+
+    <footer>
+        &copy; 2023 Game Ghost - Your Gaming E-Commerce Destination
+    </footer>
+
+    <script src="Javascript/scriptGameGhost.js"></script>
+</body>
+
+</html>
